@@ -1,0 +1,53 @@
+# NOTICE
+
+zz-ds-search
+Copyright (c) 2026 zhong
+License: MIT
+
+## 上游来源
+
+本项目基于以下开源项目重构：
+
+qiaomu-ds-search
+https://github.com/joeseesun/qiaomu-ds-search
+Copyright (c) 2026 向阳乔木
+License: MIT
+
+## 复用部分
+
+- scripts/quality.py：URL 归一化与近似复制检测的判定逻辑与阈值
+- references/workflow.md：研究与证据规则的骨架
+- scripts/zz_ds.py：请求构造、凭据存储、重试策略、响应校验的结构
+
+## 新增部分
+
+- scripts/zz_ds.py 的 open 直连兜底与 route 标志
+- 跨调用累计的软预算计数（usage / advisory / reset）
+- 从 qiaomu-ds-search 自动迁移旧凭据
+- 三层文档结构（SKILL.md 加按需加载的 references）
+
+## 删除部分
+
+- 人物简历适配器（BIO_QUERY / GOSSIP / CLICKBAIT / JOIN / RELEASE 正则）
+- facts 与 conflicts 的脚本侧语义判断
+- manifest.json、agents/interface.yaml、reports/ 自证材料
+- SKILL.md 中的配置、费用、边界长文（移入 references）
+
+完整 MIT 许可文本：
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be included in all copies
+or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
